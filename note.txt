@@ -1,0 +1,51 @@
+
+
+
+$ docker-compose up -d         # start containers in background
+$ docker-compose kill          # stop containers
+$ docker-compose up -d --build # force rebuild of Dockerfiles
+$ docker-compose rm            # remove stopped containers
+$ docker ps                    # see list of running containers
+$ docker exec -ti [NAME] bash
+
+
+Next, navigate in your terminal to the directory you cloned this, and spin up the containers for the web server by running 
+
+`docker-compose up -d --build site`.
+nginx -s reload
+
+docker exec -it nginx-server nginx -s reload
+
+
+- `docker-compose run --rm composer update`
+- `docker-compose run --rm npm run dev`
+- `docker-compose run --rm artisan migrate` 
+
+ docker network ls
+
+ docker inspect f9e560afc5ca | grep IPAddress
+
+ docker inspect b5f7b2be9702 | grep IPAddress
+ docker inspect 8d139a968ea0 | grep IPAddress
+ docker inspect a9636e2faddb | grep IPAddress
+
+
+redis 
+composer require predis/predis
+
+ mongo
+
+// createa db
+ use music
+
+
+    /// insert data 
+ db.MyGuests.insert({ name: "haha" });
+ db.MyGuests.insert({ name: "hihi" });
+
+ db.MyGuests.find()
+
+ //cearet collection
+ db.createCollection("producers")
+
+
