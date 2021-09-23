@@ -5,5 +5,4 @@ mysql
 
 /db_data
 /app
-/db_data/mongo/**/*
 .vscode/
