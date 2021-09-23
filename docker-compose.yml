@@ -3,7 +3,7 @@ version: '3'
 networks:
   app-network:
       name: docker-test
-      driver: bridge
+      # driver: bridge
 
 services:
   #app

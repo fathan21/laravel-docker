@@ -20,6 +20,13 @@ docker exec -it nginx-server nginx -s reload
 - `docker-compose run --rm composer update`
 - `docker-compose run --rm npm run dev`
 - `docker-compose run --rm artisan migrate` 
+  docker-compose run --rm artisan core:supplier-sync 
+
+docker-compose run --rm artisan config:cache
+docker-compose run --rm artisan config:clear
+
+docker-compose run --rm artisan route:cache
+docker-compose run --rm artisan route:clear
 
  docker network ls
 
@@ -49,3 +56,8 @@ composer require predis/predis
  db.createCollection("producers")
 
 
+vs code find
+^ ?(.+)$
+
+replace 
+ '$1'

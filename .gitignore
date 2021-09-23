@@ -1,3 +1,9 @@
 mysql
 .DS_Store
 .idea
+
+
+/db_data
+/app
+/db_data/mongo/**/*
+.vscode/
