@@ -1,0 +1,119 @@
+2021-10-07 04:37:55,138 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-10-07 04:37:55,197 INFO RPC interface 'supervisor' initialized
+2021-10-07 04:37:55,204 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-10-07 04:37:55,215 INFO supervisord started with pid 1
+2021-10-07 04:37:56,225 INFO spawned: 'laravel-worker_00' with pid 9
+2021-10-07 04:37:57,330 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:37:57,333 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:37:58,343 INFO spawned: 'laravel-worker_00' with pid 10
+2021-10-07 04:37:58,392 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:37:59,403 INFO spawned: 'laravel-worker_00' with pid 11
+2021-10-07 04:38:00,457 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:00,461 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:01,474 INFO spawned: 'laravel-worker_00' with pid 12
+2021-10-07 04:38:01,517 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:02,528 INFO spawned: 'laravel-worker_00' with pid 13
+2021-10-07 04:38:03,568 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:03,572 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:04,588 INFO spawned: 'laravel-worker_00' with pid 14
+2021-10-07 04:38:04,622 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:06,603 INFO spawned: 'laravel-worker_00' with pid 15
+2021-10-07 04:38:07,649 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:07,654 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:08,682 INFO spawned: 'laravel-worker_00' with pid 16
+2021-10-07 04:38:08,768 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:09,784 INFO spawned: 'laravel-worker_00' with pid 17
+2021-10-07 04:38:10,822 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:10,827 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:11,838 INFO spawned: 'laravel-worker_00' with pid 18
+2021-10-07 04:38:12,885 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:12,888 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:13,910 INFO spawned: 'laravel-worker_00' with pid 19
+2021-10-07 04:38:14,948 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:14,953 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:15,967 INFO spawned: 'laravel-worker_00' with pid 20
+2021-10-07 04:38:16,016 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:17,035 INFO spawned: 'laravel-worker_00' with pid 21
+2021-10-07 04:38:18,140 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:18,142 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:19,156 INFO spawned: 'laravel-worker_00' with pid 22
+2021-10-07 04:38:19,216 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:20,228 INFO spawned: 'laravel-worker_00' with pid 23
+2021-10-07 04:38:20,265 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:22,288 INFO spawned: 'laravel-worker_00' with pid 24
+2021-10-07 04:38:23,416 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:23,424 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:24,446 INFO spawned: 'laravel-worker_00' with pid 25
+2021-10-07 04:38:24,511 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:25,525 INFO spawned: 'laravel-worker_00' with pid 26
+2021-10-07 04:38:25,581 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:27,606 INFO spawned: 'laravel-worker_00' with pid 27
+2021-10-07 04:38:27,642 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:30,708 INFO spawned: 'laravel-worker_00' with pid 28
+2021-10-07 04:38:31,813 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:38:31,817 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:32,841 INFO spawned: 'laravel-worker_00' with pid 29
+2021-10-07 04:38:32,955 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:33,969 INFO spawned: 'laravel-worker_00' with pid 30
+2021-10-07 04:38:34,006 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:36,996 INFO spawned: 'laravel-worker_00' with pid 31
+2021-10-07 04:38:37,056 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:40,084 INFO spawned: 'laravel-worker_00' with pid 32
+2021-10-07 04:38:40,224 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:38:41,235 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2021-10-07 04:44:32,934 WARN received SIGQUIT indicating exit request
+2021-10-07 04:44:43,879 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-10-07 04:44:43,900 INFO RPC interface 'supervisor' initialized
+2021-10-07 04:44:43,908 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-10-07 04:44:43,913 INFO supervisord started with pid 1
+2021-10-07 04:44:44,924 INFO spawned: 'laravel-worker_00' with pid 7
+2021-10-07 04:44:45,965 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:44:45,967 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:44:46,986 INFO spawned: 'laravel-worker_00' with pid 8
+2021-10-07 04:44:47,039 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:44:48,053 INFO spawned: 'laravel-worker_00' with pid 9
+2021-10-07 04:44:48,086 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:44:50,105 INFO spawned: 'laravel-worker_00' with pid 10
+2021-10-07 04:44:50,146 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:44:53,161 INFO spawned: 'laravel-worker_00' with pid 11
+2021-10-07 04:44:53,197 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:44:54,200 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2021-10-07 04:49:45,732 WARN received SIGQUIT indicating exit request
+2021-10-07 04:49:56,551 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-10-07 04:49:56,565 INFO RPC interface 'supervisor' initialized
+2021-10-07 04:49:56,568 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-10-07 04:49:56,574 INFO supervisord started with pid 1
+2021-10-07 04:49:57,617 INFO spawned: 'laravel-worker_00' with pid 7
+2021-10-07 04:49:58,689 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 04:49:58,691 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:49:59,703 INFO spawned: 'laravel-worker_00' with pid 8
+2021-10-07 04:49:59,742 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:50:00,755 INFO spawned: 'laravel-worker_00' with pid 9
+2021-10-07 04:50:00,803 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:50:02,814 INFO spawned: 'laravel-worker_00' with pid 10
+2021-10-07 04:50:02,845 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:50:06,831 INFO spawned: 'laravel-worker_00' with pid 11
+2021-10-07 04:50:06,855 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:50:07,860 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2021-10-07 04:51:45,038 WARN received SIGQUIT indicating exit request
+2021-10-07 04:52:40,755 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-10-07 04:52:40,765 INFO RPC interface 'supervisor' initialized
+2021-10-07 04:52:40,768 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-10-07 04:52:40,772 INFO supervisord started with pid 1
+2021-10-07 04:52:41,794 INFO spawned: 'laravel-worker_00' with pid 9
+2021-10-07 04:52:41,895 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:52:42,913 INFO spawned: 'laravel-worker_00' with pid 10
+2021-10-07 04:52:43,015 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:52:45,055 INFO spawned: 'laravel-worker_00' with pid 11
+2021-10-07 04:52:45,112 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:52:48,213 INFO spawned: 'laravel-worker_00' with pid 12
+2021-10-07 04:52:48,269 INFO exited: laravel-worker_00 (exit status 1; not expected)
+2021-10-07 04:52:49,280 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2021-10-07 04:58:37,985 WARN received SIGQUIT indicating exit request
+2021-10-07 04:58:40,690 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-10-07 04:58:40,703 INFO RPC interface 'supervisor' initialized
+2021-10-07 04:58:40,706 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-10-07 04:58:40,710 INFO supervisord started with pid 1
+2021-10-07 04:58:41,718 INFO spawned: 'laravel-worker_00' with pid 7
+2021-10-07 04:58:42,723 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-07 05:06:14,004 INFO reaped unknown pid 224 (terminated by SIGINT)

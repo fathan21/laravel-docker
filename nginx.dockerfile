@@ -8,3 +8,17 @@ RUN mkdir -p /var/www/html
 RUN addgroup -g 1000 laravel && adduser -G laravel -g laravel -s /bin/sh -D laravel
 
 RUN chown laravel:laravel /var/www/html
+
+
+# Essentials
+RUN echo "UTC" > /etc/timezone
+
+
+
+# Install supervisor
+# RUN apt-get update \
+#   && apt-get install -y --no-install-recommends \
+#     supervisor \
+#   && rm -rf /var/lib/apt/lists/*
+
+

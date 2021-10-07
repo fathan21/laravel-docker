@@ -5,6 +5,10 @@ networks:
       name: docker-test
       # driver: bridge
 
+volumes:
+  core-app:
+    external: true
+
 services:
   #app
   site:
@@ -29,7 +33,7 @@ services:
   mysql:
     image: mysql:5.7.29
     container_name: mysql
-    restart: unless-stopped
+    restart: always
     tty: true
     ports:
       - 3307:3306
@@ -132,3 +136,20 @@ services:
   #     - 8025:8025
   #   networks:
   #     - laravel
+  
+
+  supervisor:
+    build:
+      context: .
+      dockerfile: supervisor.dockerfile
+    container_name: supervisor
+    volumes:
+      - .:/var/www/html:delegated
+    working_dir: /var/www/html
+    networks:
+      - app-network
+    command: 
+      - /bin/sh
+      - -c
+      - supervisord -c /var/www/html/supervisor/supervisor.conf 
+      - supervisorctl  start all

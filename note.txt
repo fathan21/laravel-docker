@@ -12,6 +12,7 @@ $ docker exec -ti [NAME] bash
 Next, navigate in your terminal to the directory you cloned this, and spin up the containers for the web server by running 
 
 `docker-compose up -d --build site`.
+
 nginx -s reload
 
 docker exec -it nginx-server nginx -s reload
@@ -20,7 +21,10 @@ docker exec -it nginx-server nginx -s reload
 - `docker-compose run --rm composer update`
 - `docker-compose run --rm npm run dev`
 - `docker-compose run --rm artisan migrate` 
-  docker-compose run --rm artisan core:supplier-sync 
+  docker-compose run --rm artisan core:supplier-sync
+  docker-compose run --rm artisan queue:listen
+
+docker-compose run --rm artisan migrate --path=/database/migrations/2021_09_28_144314_edit_transaction_airline_paxes_table.php 
 
 docker-compose run --rm artisan config:cache
 docker-compose run --rm artisan config:clear
@@ -61,3 +65,20 @@ vs code find
 
 replace 
  '$1'
+
+
+ docker run -d \
+  --name docker-influxdb-grafana \
+  -p 3003:3003 \
+  -p 3004:8083 \
+  -p 8086:8086 \
+  -v /influxdb:/var/lib/influxdb \
+  -v /grafana:/var/lib/grafana \
+  philhawthorne/docker-influxdb-grafana:latest
+
+
+
+
+$ supervisorctl status
+
+$ supervisorctl

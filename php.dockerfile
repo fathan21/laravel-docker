@@ -16,6 +16,7 @@ RUN chown laravel:laravel /var/www/html
 RUN chmod -R 765 /var/www/html/
 
 RUN docker-php-ext-install pdo pdo_mysql 
+RUN apk add --no-cache libpng libpng-dev && docker-php-ext-install gd && apk del libpng-dev
 
 
 # Setup bzip2 extension
@@ -88,3 +89,4 @@ RUN apk --no-cache add pcre-dev ${PHPIZE_DEPS} \
     # && docker-php-source delete \
     # && rm -rf /tmp/*
 
+RUN apk add --no-cache supervisor
