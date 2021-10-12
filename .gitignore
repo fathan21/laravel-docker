@@ -6,3 +6,7 @@ mysql
 /db_data
 /app
 .vscode/
+supervisor/logs/cron.log
+supervisor/logs/supervisord.log
+supervisor/supervisor.conf
+supervisor/logs/supervisord.log

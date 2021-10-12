@@ -141,7 +141,7 @@ services:
   supervisor:
     build:
       context: .
-      dockerfile: supervisor.dockerfile
+      dockerfile: php.dockerfile
     container_name: supervisor
     volumes:
       - .:/var/www/html:delegated

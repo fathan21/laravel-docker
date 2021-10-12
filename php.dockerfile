@@ -89,4 +89,28 @@ RUN apk --no-cache add pcre-dev ${PHPIZE_DEPS} \
     # && docker-php-source delete \
     # && rm -rf /tmp/*
 
-RUN apk add --no-cache supervisor
+
+
+
+
+# supervisor
+RUN apk add supervisor \
+ && rm -rf /var/cache/apk/*
+
+# copy file crontab ke direktori cron.d
+# COPY  /var/www/html/supervisor/cron /etc/cron.d/crontab
+
+# masuk sebagai root
+# USER root
+
+# beri akses eksekusi crontab
+# RUN chmod 0644 /etc/cron.d/crontab
+
+# # apply cron job
+# RUN crontab /etc/cron.d/crontab
+
+# # buat log file
+# RUN touch /var/log/cron.log
+
+# jalankan command cron ketika container sudah berjalan
+# CMD cron && tail -f /var/log/cron.log

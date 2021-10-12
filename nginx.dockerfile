@@ -11,14 +11,7 @@ RUN chown laravel:laravel /var/www/html
 
 
 # Essentials
-RUN echo "UTC" > /etc/timezone
+# RUN echo "UTC" > /etc/timezone
 
-
-
-# Install supervisor
-# RUN apt-get update \
-#   && apt-get install -y --no-install-recommends \
-#     supervisor \
-#   && rm -rf /var/lib/apt/lists/*
 
 

@@ -24,7 +24,8 @@ docker exec -it nginx-server nginx -s reload
   docker-compose run --rm artisan core:supplier-sync
   docker-compose run --rm artisan queue:listen
 
-docker-compose run --rm artisan migrate --path=/database/migrations/2021_09_28_144314_edit_transaction_airline_paxes_table.php 
+docker-compose run --rm artisan migrate --path=/database/migrations/2021_10_07_134401_edit_suppliers_table.php
+
 
 docker-compose run --rm artisan config:cache
 docker-compose run --rm artisan config:clear
