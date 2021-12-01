@@ -1,6 +1,6 @@
 FROM composer:2
 
-RUN addgroup -g 1000 laravel && adduser -G laravel -g laravel -s /bin/sh -D laravel
+RUN addgroup -g 1000 user-dev && adduser -G user-dev -g user-dev -s /bin/sh -D user-dev
 
 
 # RUN apk -U upgrade && \

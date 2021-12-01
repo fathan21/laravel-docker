@@ -93,7 +93,7 @@ services:
     working_dir: /var/www/html
     depends_on:
       - php
-    user: laravel
+    user: user-dev
     entrypoint: ['composer', '--ignore-platform-reqs']
     networks:
       - app-network
@@ -123,7 +123,7 @@ services:
     depends_on:
       - mysql
     working_dir: /var/www/html
-    user: laravel
+    user: user-dev
     entrypoint: ['php', '/var/www/html/artisan']
     networks:
       - app-network
@@ -143,9 +143,14 @@ services:
       context: .
       dockerfile: php.dockerfile
     container_name: supervisor
+    restart: unless-stopped
     volumes:
-      - .:/var/www/html:delegated
+      - .:/var/www/html
+      - ./supervisor:/etc/supervisor/conf.d
     working_dir: /var/www/html
+    user: user-dev
+    depends_on:
+      - php
     networks:
       - app-network
     command: 

@@ -6,11 +6,11 @@ WORKDIR /var/www/html
 
 ADD ./php/www.conf /usr/local/etc/php-fpm.d/
 
-RUN addgroup -g 1000 laravel && adduser -G laravel -g laravel -s /bin/sh -D laravel
+RUN addgroup -g 1000 user-dev && adduser -G user-dev -g user-dev -s /bin/sh -D user-dev
 
 RUN mkdir -p /var/www/html
 
-RUN chown laravel:laravel /var/www/html
+RUN chown user-dev:user-dev /var/www/html
 
 
 RUN chmod -R 765 /var/www/html/
@@ -114,3 +114,7 @@ RUN apk add supervisor \
 
 # jalankan command cron ketika container sudah berjalan
 # CMD cron && tail -f /var/log/cron.log
+
+
+# RUN apk update && \
+#     apk add mysql-client
