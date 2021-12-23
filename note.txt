@@ -8,6 +8,7 @@ $ docker-compose rm            # remove stopped containers
 $ docker ps                    # see list of running containers
 $ docker exec -ti [NAME] bash
  docker-compose build supervisor
+ docker-compose restart
 
 Next, navigate in your terminal to the directory you cloned this, and spin up the containers for the web server by running 
 
@@ -85,7 +86,7 @@ replace
   philhawthorne/docker-influxdb-grafana:latest
 
 
-
+php artisan queue:table
 
 $ supervisorctl status
 
@@ -135,3 +136,39 @@ rqid=952e29754d9ce055db9c8f205c7d4b56&app=information&action=get_schedule_real&a
 log id 227
 rqid=952e29754d9ce055db9c8f205c7d4b56&app=information&action=get_schedule_real&airline_code=QG&mmid=kaicl&mmco=ATA&org=DPS&des=CGK&flight_type=O&flight_date=2021-12-20&num_adt=1&num_chd=0&num_inf=0
 {"error_code":"000","error_msg":"","flight_type":"O","airline_code":"QG","org":"DPS","des":"CGK","flight_date":"2021-12-20","return_date":null,"num_adt":"1","num_chd":"0","num_inf":"0","SessReq":"ken0120211201034418","schedule":{"departure":[{"Flights":[{"FlightNo":"QG663","Transit":0,"STD":"DPS","STA":"CGK","ETD":"2021-12-20 09:00","ETA":"2021-12-20 10:00"}],"Fares":[[{"SubClass":"K","SeatAvb":"9","TotalFare":974000,"NTA":958516,"selectedIDdep":11678327},{"SubClass":"G","SeatAvb":"9","TotalFare":1108200,"NTA":1090325,"selectedIDdep":11678328},{"SubClass":"B","SeatAvb":"9","TotalFare":1375500,"NTA":1352862,"selectedIDdep":11678329},{"SubClass":"A","SeatAvb":"9","TotalFare":1442600,"NTA":1418766,"selectedIDdep":11678330}]]},{"Flights":[{"FlightNo":"QG681","Transit":0,"STD":"DPS","STA":"CGK","ETD":"2021-12-20 11:20","ETA":"2021-12-20 12:20"}],"Fares":[[{"SubClass":"OTE","SeatAvb":"2","TotalFare":1241300,"NTA":1221053,"selectedIDdep":11678331},{"SubClass":"B","SeatAvb":"2","TotalFare":1375500,"NTA":1352862,"selectedIDdep":11678332},{"SubClass":"ORD","SeatAvb":"9","TotalFare":1401900,"NTA":1378792,"selectedIDdep":11678333},{"SubClass":"A","SeatAvb":"2","TotalFare":1442600,"NTA":1418766,"selectedIDdep":11678334},{"SubClass":"OTA","SeatAvb":"2","TotalFare":1442600,"NTA":1418766,"selectedIDdep":11678335}]]},{"Flights":[{"FlightNo":"QG685","Transit":0,"STD":"DPS","STA":"CGK","ETD":"2021-12-20 13:10","ETA":"2021-12-20 14:10"}],"Fares":[[{"SubClass":"ORD","SeatAvb":"9","TotalFare":1401900,"NTA":1378792,"selectedIDdep":11678336}]]},{"Flights":[{"FlightNo":"QG691","Transit":0,"STD":"DPS","STA":"CGK","ETD":"2021-12-20 14:40","ETA":"2021-12-20 15:35"}],"Fares":[[{"SubClass":"B","SeatAvb":"2","TotalFare":1375500,"NTA":1352862,"selectedIDdep":11678337},{"SubClass":"A","SeatAvb":"2","TotalFare":1442600,"NTA":1418766,"selectedIDdep":11678338}]]},{"Flights":[{"FlightNo":"QG683","Transit":0,"STD":"DPS","STA":"CGK","ETD":"2021-12-20 18:05","ETA":"2021-12-20 19:05"}],"Fares":[[{"SubClass":"ORD","SeatAvb":"9","TotalFare":1401900,"NTA":1378792,"selectedIDdep":11678339}]]},{"Flights":[{"FlightNo":"QG689","Transit":0,"STD":"DPS","STA":"CGK","ETD":"2021-12-20 19:45","ETA":"2021-12-20 20:45"}],"Fares":[[{"SubClass":"B","SeatAvb":"9","TotalFare":1375500,"NTA":1352862,"selectedIDdep":11678340},{"SubClass":"A","SeatAvb":"9","TotalFare":1442600,"NTA":1418766,"selectedIDdep":11678341}]]},{"Flights":[{"FlightNo":"QG687","Transit":0,"STD":"DPS","STA":"CGK","ETD":"2021-12-20 19:45","ETA":"2021-12-20 20:45"}],"Fares":[""]}]}}
+
+
+
+
+
+->onQueue('high')
+low default
+
+php artisan queue:work --timeout=60
+
+
+
+    /**
+     * The number of times the job may be attempted.
+     *
+     * @var int
+     */
+    public $tries = 5;
+
+
+
+
+RESCRICT adalah jika kita menghapus atau merubah baris data dalam tabel A maka tidak akan diperbolehkan jika pada tabel B masih ditemukan relasi datanya. InnoDB dapat menolak perintah perubahan atau penghapusan tersebut.
+
+CASCADE adalah jika kita menghapus atau merubah baris data dalam tabel A secara otomatis akan menghapus atau merubah baris yang sesuai dalam tabel B.
+
+SET NULL adalah jika kita menghapus atau merubah baris data dalam tabel A secara otomatis akan merubah baris pada tabel B menjadi NULL pada kolom yang terelasi. Hal ini dapat dilakukan jika kolom foreign key tidak memiliki pengaturan NOT NULL.
+
+NO ACTION dalam standar SQL, NO ACTION berarti tidak merubah apapun pada tabel anak jika kita merubah data pada salah satu tabelnya
+
+
+
+
+
+
+
